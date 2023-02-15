@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+ margin: auto;
+ background-color: rgb(255,255,255);
+ display: flex;
+ height: 370px;
+ width: 350px;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ box-shadow: 10px 10px rgba(0,0,0,0.308);
+}
+
+.form {
+  width: 80%;
+  margin: auto;
+}
+
+.form h3 {
+  margin: 15px 0;
+  font-size: 30px;
+}
+
+.form input {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  border: 2px solid #646464;
+  opacity: .5;
+  outline: none;
+}
+
+.form button {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  border: 2px solid #646464;
+  border: none;
+  opacity: .5;
+  outline: none;
+  background-color: #927384;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  font-weight: bold;
+  
+}
+
+.form button:hover {
+  background-color: #7c7064;
+}
+
+span {
+  color: #886565;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .login-form {
+    height: auto;
+    width: 80%;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .form button, .form input {
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .login-form {
+    height: auto;
+    width: 90%;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .form button, .form input {
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .form h3 {
+    font-size: 20px;
+  }
+}
